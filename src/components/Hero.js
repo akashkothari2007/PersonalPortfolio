@@ -23,6 +23,13 @@ const Hero = () => {
     return () => observer.disconnect();
   }, []);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="hero" className="hero" ref={heroRef}>
       <div className="hero-container">
@@ -31,17 +38,17 @@ const Hero = () => {
             <h1 className="hero-name">Akash Kothari</h1>
             <p className="hero-tagline">Computer Engineering Student • Software + Hardware Builder</p>
             <p className="hero-description">
-            I’m a Computer Engineering student at the University of Waterloo passionate about building scalable applications and hardware prototypes. From AI-powered cloud integrations to self-balancing robots, I love creating solutions that bridge software and hardware. Always curious, always building.
+            I'm a Computer Engineering student at the University of Waterloo passionate about building scalable applications and hardware prototypes. From AI-powered cloud integrations to self-balancing robots, I love creating solutions that bridge software and hardware. Always curious, always building.
             </p>
             <div className="hero-buttons">
-              <button className="btn btn-primary">View My Work</button>
-              <button className="btn btn-secondary">Get In Touch</button>
+              <button className="btn btn-primary" onClick={() => scrollToSection('projects')}>View My Work</button>
+              <button className="btn btn-secondary" onClick={() => scrollToSection('contact')}>Get In Touch</button>
             </div>
           </div>
           <div className="hero-image">
             <div className="profile-image">
               <img 
-                src="/images/test.png" 
+                src="/images/headshot.png" 
                 alt="Profile" 
                 onError={(e) => {
                   e.target.style.display = 'none';

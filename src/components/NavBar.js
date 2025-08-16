@@ -33,7 +33,7 @@ const NavBar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo" onClick={() => scrollToSection('hero')}>
-          <span>Portfolio</span>
+          <span>Akash.dev</span>
         </div>
         
         <div className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>

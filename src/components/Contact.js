@@ -18,18 +18,17 @@ const Contact = () => {
     },
     {
       name: "Email",
-      // pre-filled subject/body you can tweak
       url: "mailto:akash@kotharigroup.com?subject=Hello%20Akash&body=Hi%20Akash%2C",
       icon: "✉️",
       color: "#ea4335"
     },
-    // Optional: add when you have it hosted
-    // {
-    //   name: "Resume (PDF)",
-    //   url: "/Akash_Kothari_Resume.pdf",
-    //   icon: "📝",
-    //   color: "#6c63ff"
-    // }
+    
+    {
+        name: "Resume (PDF)",
+        url: "/Akash_Kothari_Resume.pdf",
+        icon: "📝",
+        color: "#6c63ff"
+    }
   ];
 
   return (
