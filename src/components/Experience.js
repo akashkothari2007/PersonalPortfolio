@@ -28,7 +28,6 @@ const Experience = () => {
         "Tutored Grades 9–12 in algebra and calculus, created structured problem sets, tracked progress, and mentored new instructors to improve center efficiency.",
       technologies: ["Teaching", "Curriculum Design", "Leadership", "Communication"]
     },
-    // Optional: keep this if you want a continuous timeline
     {
       company: "Open Source & Personal Projects",
       role: "Contributor / Builder",
