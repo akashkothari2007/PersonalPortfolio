@@ -25,7 +25,7 @@ const Contact = () => {
     
     {
         name: "Resume (PDF)",
-        url: "/Akash_Kothari_Resume.pdf",
+        url: "/images/Akash_Kothari_Resume.pdf",
         icon: "📝",
         color: "#6c63ff"
     }

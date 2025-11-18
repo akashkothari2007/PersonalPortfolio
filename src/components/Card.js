@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ title, description, techStack, githubLink, demoLink, image }) => {
+const Card = ({ title, description, techStack, githubLink, demoLink, websiteLink, image }) => {
   return (
     <div className="card">
       <div className="card-image">
@@ -39,7 +39,17 @@ const Card = ({ title, description, techStack, githubLink, demoLink, image }) =>
               rel="noopener noreferrer"
               className="card-link demo"
             >
-              <span>🌐</span> Live Demo
+              <span>🎥</span> Demo
+            </a>
+          )}
+          {websiteLink && (
+            <a 
+              href={websiteLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="card-link website"
+            >
+              <span>🌐</span> Live Site
             </a>
           )}
         </div>
